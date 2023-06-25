@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun</title>
+
+    <!-- ======================================= -->
+    <!-- linking the css file here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- ======================================= -->
+<!-- the main body part of the html -->
+
+<body>
+    <div id="cursor"></div>
+    <div id="BigContainer">
+        <!-- ================================== -->
+        <!-- contianer 2 code -->
+
+        <div id="container2">
+            <div id="me2">
+                <p>USER</p>
+            </div>
+            <div id="computer2">
+                <p>COMPUTER</p>
+            </div>
+        </div>
+        <!-- ================================== -->
+        <!-- contianer 1 code -->
+        <div id="container1">
+            <div id="me">
+                <p>0</p>
+            </div>
+            <div id="computer">
+                <p>0</p>
+            </div>
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- container 3 code -->
+        <div id="container3">
+            <button id="btn" onclick="main()">PRESS ENTER</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!--========================================  -->
+    <!-- linking the javascipt file here -->
+    <script>
+        
+        // THE ENTER KEYDOWN EVENT:
+        
+        {
+
+            document.addEventListener("keydown",f => {
+                if(f.key === "Enter"){
+                    main();
+                }
+            })
+        }
+
+        // THE MOUSE ENTER EVENT :
+        {
+            document.getElementById("container3").addEventListener("mouseenter", btnTextChange =>{
+                document.getElementById("btn").innerHTML = "CLICK HERE";
+            })
+        }
+
+        // THE MOUSE EXIT EVENT :
+        {
+            document.getElementById("container3").addEventListener("mouseleave", btnTextChange =>{
+                document.getElementById("btn").innerHTML = "PRESS ENTER";
+            })
+        }
+
+        // EXPERIMENT:
+        {
+            const c = document.getElementById("cursor");
+            document.addEventListener("mousemove" , mouseHalo =>{
+                const posX = mouseHalo.clientX;
+                const posY = mouseHalo.clientY;
+
+                c.style.left = `${posX}px`;
+                c.style.top = `${posY}px`;
+            })
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
