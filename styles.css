@@ -145,3 +145,15 @@ body{
     background-color: black;
     border-radius: 100%;
 }
+
+/* ============================================================ */
+/* adding media query */
+
+@media (max-width:1024px){
+    #computer2{
+        width: 15rem;
+    }
+    #me2{
+        margin-left: 3rem;
+    }
+}
