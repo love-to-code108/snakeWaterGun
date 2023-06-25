@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    border:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    cursor: none;
+}
+
+/* ======================================================== */
+/* the main body starts from here onwards */
+
+#BigContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======================================================== */
+/* container1 starts here */
+
+#container1{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* the "me" container inside container 1 */
+
+#me{
+    width: 15%;
+    height: 40%;
+    background-color: whitesmoke;
+    font-size : 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem black;
+    border-radius: 4rem;
+    border: 4px solid black;
+    
+}
+
+
+/* the "computer" container inside contianer 1 */
+
+#computer{
+    width: 15%;
+    height: 40%;
+    background-color: whitesmoke;
+    font-size : 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2rem;
+    box-shadow: 1rem 1rem black;
+    border-radius: 4rem;
+    border: 4px solid black;
+}
+
+
+
+/* ========================================================== */
+/* container 2 starts here */
+
+#container2{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5rem;
+}
+
+/* the me2 container goes here */
+#me2{
+    width: 15%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 5rem; */
+    font-size: 2rem;
+    font-weight: 600;
+    border: 4px solid black;
+}
+#me2:hover{
+    /* cursor: pointer; */
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* the computer2 container goes here */
+#computer2{
+    width: 15%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 5rem; */
+    font-size: 2rem;
+    font-weight: 600;
+    border: 4px solid black;
+}
+#computer2:hover{
+    /* cursor: pointer; */
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* ============================================================ */
+/* container3 */
+#container3 button{
+    width: 22rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 4px solid black;
+}
+#container3 button:hover{
+    /* cursor: pointer; */
+    color: white;
+    background-color: black;
+}
+
+
+/* ==============================================================  */
+/* TRYING TO MAKE A CUSTOM CURSOR */
+#cursor{
+    z-index: 10;
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+}
