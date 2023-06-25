@@ -16,50 +16,50 @@
     // for userInput == snake
     const snake = (comp) => {
         if (comp == 2) {
-            prompt("USER        COMPUTER\nSNAKE        WATER\nUSER WINS")
+            alert("USER        COMPUTER\nSNAKE        WATER\n\nUSER WINS")
             user += 1
         } else if (comp == 3) {
-            prompt("USER        COMPUTER\nSNAKE        GUN\nCOMPUTER WINS")
+            alert("USER        COMPUTER\nSNAKE        GUN\n\nCOMPUTER WINS")
             computer += 1
         } else {
-            prompt("USER        COMPUTER\nSNAKE        SNAKE\nDRAW")
+            alert("USER        COMPUTER\nSNAKE        SNAKE\n\nDRAW")
         }
         document.getElementById("me").innerHTML = user;
         document.getElementById("computer").innerHTML = computer;
     }
-    
+
     // for userInput == water
     const water = (comp) => {
         if (comp == 3) {
-            prompt("USER        COMPUTER\nWATER        GUN\nUSER WINS")
+            alert("USER        COMPUTER\nWATER        GUN\n\nUSER WINS")
             user += 1
         } else if (comp == 1) {
-            prompt("USER        COMPUTER\nWATER        SNAKE\nCOMPUTER WINS")
+            alert("USER        COMPUTER\nWATER        SNAKE\n\nCOMPUTER WINS")
             computer += 1
-        }else{
-            prompt("USER        COMPUTER\nWATER        WATER\nDRAW")
+        } else {
+            alert("USER        COMPUTER\nWATER        WATER\n\nDRAW")
         }
         document.getElementById("me").innerHTML = user;
         document.getElementById("computer").innerHTML = computer;
     }
-    
-    
+
+
     // for userInput == gun
     const gun = (comp) => {
         if (comp == 1) {
-            prompt("USER        COMPUTER\nGUN        SNAKE\nUSER WINS")
+            alert("USER        COMPUTER\nGUN        SNAKE\n\nUSER WINS")
             user += 1
         } else if (comp == 2) {
-            prompt("USER        COMPUTER\nGUN        WATER\nCOMPUTER WINS")
+            alert("USER        COMPUTER\nGUN        WATER\n\nCOMPUTER WINS")
             computer += 1
-        }else{
-            prompt("USER        COMPUTER\nGUN        GUN\nDRAW");
+        } else {
+            alert("USER        COMPUTER\nGUN        GUN\n\nDRAW");
         }
         document.getElementById("me").innerHTML = user;
         document.getElementById("computer").innerHTML = computer;
     }
-    
-    
+
+
     function main() {
         let n = input()
         if ((n == "SNAKE") || (n == "WATER") || (n == "GUN")) {
