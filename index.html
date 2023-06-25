@@ -57,13 +57,13 @@
     <!--========================================  -->
     <!-- linking the javascipt file here -->
     <script>
-        
+
         // THE ENTER KEYDOWN EVENT:
-        
+
         {
 
-            document.addEventListener("keydown",f => {
-                if(f.key === "Enter"){
+            document.addEventListener("keydown", f => {
+                if (f.key === "Enter") {
                     main();
                 }
             })
@@ -71,14 +71,14 @@
 
         // THE MOUSE ENTER EVENT :
         {
-            document.getElementById("container3").addEventListener("mouseenter", btnTextChange =>{
+            document.getElementById("container3").addEventListener("mouseenter", btnTextChange => {
                 document.getElementById("btn").innerHTML = "CLICK HERE";
             })
         }
 
         // THE MOUSE EXIT EVENT :
         {
-            document.getElementById("container3").addEventListener("mouseleave", btnTextChange =>{
+            document.getElementById("container3").addEventListener("mouseleave", btnTextChange => {
                 document.getElementById("btn").innerHTML = "PRESS ENTER";
             })
         }
@@ -86,7 +86,7 @@
         // EXPERIMENT:
         {
             const c = document.getElementById("cursor");
-            document.addEventListener("mousemove" , mouseHalo =>{
+            document.addEventListener("mousemove", mouseHalo => {
                 const posX = mouseHalo.clientX;
                 const posY = mouseHalo.clientY;
 
@@ -95,6 +95,10 @@
             })
         }
     </script>
+
+
+    <!-- ======================================================= -->
+    <!-- THE GAMES LOGIC LIES BELOW -->
     <script src="script.js"></script>
 </body>
 

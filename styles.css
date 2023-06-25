@@ -127,6 +127,7 @@ body{
 }
 #container3 button:hover{
     /* cursor: pointer; */
+    cursor: none;
     color: white;
     background-color: black;
 }
